@@ -84,8 +84,11 @@ grid-template-columns: repeat(2, 1fr);
         }
         #drop-down-menu-container{
           display: grid;
-          
         }
+        #drop-down-menu-container label, #menu{
+          background-color: rgb(82, 187, 235);
+        } 
+        
         #article{
          display: flex;
          overflow-x: auto;
