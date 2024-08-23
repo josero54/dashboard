@@ -69,7 +69,7 @@ grid-template-columns: repeat(2, 1fr);
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.5fr 2fr 2fr 2rem;
+        grid-template-rows: 1fr 0.5fr 2fr 2fr;
     }
     #header{
         grid-column: 1/2;
@@ -84,25 +84,19 @@ grid-template-columns: repeat(2, 1fr);
         }
         #drop-down-menu-container{
           display: grid;
+          
         }
         #article{
          display: flex;
          overflow-x: auto;
-         scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-         scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
           grid-column: 1/2;
           grid-row: 3/4;
           
         }
-        #article::-webkit-scrollbar { 
-          display: none;  /* WebKit */
-      }
+        
         .article{
           flex: 0 0 100%;
           width: 100%;
-          scroll-snap-align: start;
         }
         
       #news{
