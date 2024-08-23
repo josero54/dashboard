@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: red solid 2px;
+    box-sizing: border-box    
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 2rem;
+    background-color: rgb(210, 209, 209);
+}
+
+#header{
+  display: grid;
+  grid-column: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap:3px;
+  padding: 3px;
+  grid-column: 2/4;
+  background-color: white;
+}
+#top-header{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#bottom-header{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+#side-bar{
+  display: grid;
+  grid-template-rows: 1fr;
+    background-color: rgb(82, 187, 235);
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding:3px;
+    gap: 3px;
+  }
+  #drop-down-menu-container{
+    display: none;
+  }
+  #menu-container{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+  }
+  #article{
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 3px;
+    gap: 3px;
+  }
+#news{
+  display: grid;
+    grid-column: 3/4;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 3px;
+    gap: 3px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        padding: 5px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 2fr 2fr 2rem;
+    }
+    #header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      #side-bar{
+        grid-column: 1/2;
+          grid-row: 2/3;
+        }
+        #menu-container{
+          display: none;
+        }
+        #drop-down-menu-container{
+          display: grid;
+        }
+        #article{
+         display: flex;
+         overflow-x: auto;
+         scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+         scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+          grid-column: 1/2;
+          grid-row: 3/4;
+          
+        }
+        #article::-webkit-scrollbar { 
+          display: none;  /* WebKit */
+      }
+        .article{
+          flex: 0 0 100%;
+          width: 100%;
+          scroll-snap-align: start;
+        }
+        
+      #news{
+        grid-column: 1/2;
+          grid-row: 4/5;
+      }
+}
