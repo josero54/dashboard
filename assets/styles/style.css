@@ -48,10 +48,42 @@ body{
   justify-content: center;
   align-items: center;
 }
-
+.profile-picture{
+  border-radius: 50%;
+}
 #bottom-header{
   display: grid;
 grid-template-columns: repeat(2, 1fr);
+}
+.logotype{
+  border-radius: 50%;
+  padding: 0%;
+}
+#logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 15px 5px 15px;
+  gap: 5px;
+  font-size: 0.8rem;
+  
+}
+.welcome-message{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#navbar{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+.nav-btn{
+  width: 22.22%;
+  min-width: fit-content;
+  padding: 5px;
+  border-radius: 15px;
 }
 #side-bar{
   display: grid;
@@ -73,8 +105,24 @@ grid-template-columns: repeat(2, 1fr);
     display: grid;
     grid-column: 2/3;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 3px;
+    padding: 10px;
     gap: 3px;
+  }
+  .article{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+          border-radius: 8px;
+          background-color: whitesmoke;
+  }
+  .news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: whitesmoke;
   }
 #news{
   display: grid;
@@ -84,7 +132,7 @@ grid-template-columns: repeat(2, 1fr);
     gap: 3px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 715px){
     body{
         padding: 5px;
         display: grid;
@@ -116,10 +164,11 @@ grid-template-columns: repeat(2, 1fr);
          overflow-x: auto;
           grid-column: 1/2;
           grid-row: 3/4;
-          
+          gap: 10px;
         }
         
         .article{
+          display: flex;
           flex: 0 0 100%;
           width: 100%;
         }
