@@ -234,7 +234,7 @@ grid-template-columns: repeat(2, 1fr);
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 4fr;
+        grid-template-rows: 1fr 1fr 4fr ;
     }
     #header{
         grid-column: 1/2;
@@ -302,5 +302,6 @@ grid-template-columns: repeat(2, 1fr);
       }
       .news{
         overflow: auto;
+        margin-bottom: 15px;
       }
 }
