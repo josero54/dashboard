@@ -89,6 +89,8 @@ grid-template-columns: repeat(2, 1fr);
   min-width: fit-content;
   padding: 5px;
   border-radius: 15px;
+  background-color: rgb(91, 91, 243);
+  color: white;
 }
 
 #side-bar{
@@ -296,6 +298,9 @@ grid-template-columns: repeat(2, 1fr);
           position: sticky;
           bottom: 0px;
           box-shadow: rgba(0, 0, 0, 0.401) 0px -10px 20px;
-          overflow: auto;
+          height: 150px;
+      }
+      .news{
+        overflow: auto;
       }
 }
