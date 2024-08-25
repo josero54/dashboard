@@ -98,6 +98,7 @@ grid-template-columns: repeat(2, 1fr);
     grid-row: 1/4;
     padding:3px;
     gap: 3px;
+    padding-left: 15px;
   }
   #menu-container{
     display: flex;
@@ -162,7 +163,7 @@ grid-template-columns: repeat(2, 1fr);
   }
   .menu-item{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 550;
   }
   .title{
@@ -211,7 +212,7 @@ grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 650px){
     body{
         padding: 5px;
         display: grid;
@@ -236,7 +237,17 @@ grid-template-columns: repeat(2, 1fr);
         #drop-down-menu-container label, #menu{
           background-color: rgb(82, 187, 235);
           text-align: center;
+          color: white;
+          font-weight: bold;
         } 
+        #drop-menu{
+          text-align: center;
+          background-color: rgb(82, 187, 235);
+          border: 0px;
+          padding-top: 5px;
+          color: white;
+          font-weight: bold;
+        }
         
         #article{
          display: flex;
